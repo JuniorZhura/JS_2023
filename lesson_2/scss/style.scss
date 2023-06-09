@@ -1,0 +1,60 @@
+@use "sass:math";
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_fonts.scss";
+
+.wrapper {
+      overflow: hidden; 
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper > .main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	padding: 0 15px;
+	max-width: rem(1270);
+	margin: 0 auto;
+}
+// ____________________________________________________________________
+.wrapper {
+	background: url('../img/background_image.webp') 0 0 repeat;
+	padding-top: rem(10);
+	&__title {
+		font-size: rem(50);
+		font-weight: 500;
+		line-height: math.div(55 , 50);
+		color: #ffffff;
+		text-decoration: underline;
+		text-align: center;
+		margin-bottom: rem(30);
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: rem(20);
+	}
+}
+.tasks {
+	&__item {
+		display: inline-block;
+		font-size: rem(28);
+		font-weight: 300;
+		color: #393b42;
+		text-align: center;
+		max-width: rem(650);
+		padding: rem(15) rem(40);
+		background-color: rgb(255, 255, 255);
+		border-radius: rem(8);
+		span, p {
+			font-size: rem(14);
+			color: #5d606b;
+		}
+		p {
+			line-height: math.div(18 , 14);
+		}
+	}
+}
