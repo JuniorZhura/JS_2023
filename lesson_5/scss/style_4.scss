@@ -1,0 +1,26 @@
+@use "sass:math";
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_fonts.scss";
+
+div {
+      padding-top: rem(50);
+}
+table,
+th,
+td {
+      border: 2px solid #4c7fdd;
+}
+table {
+      margin: 0 auto;
+      padding: rem(5);
+}
+td{
+      font-size: rem(40);
+      line-height: math.div(45 , 40);
+      color: #103883;
+      min-width: rem(50);
+      min-height: rem(50);
+      text-align: center;
+
+}
