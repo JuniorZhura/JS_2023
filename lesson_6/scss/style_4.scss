@@ -1,0 +1,19 @@
+@use "sass:math";
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_fonts.scss";
+
+body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: rem(50);
+}
+
+
+div {
+      font-size: rem(25);
+      text-align: center;
+      padding: rem(20);
+}
